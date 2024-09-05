@@ -3,17 +3,17 @@
 namespace Tests\services;
 
 use App\dto\TransactionDto;
-use App\services\TransactionsParseParseService;
+use App\services\TransactionsParseService;
 use JsonException;
 use PHPUnit\Framework\TestCase;
 
-class TransactionsParseParseServiceTest extends TestCase
+class TransactionsParseServiceTest extends TestCase
 {
-    private TransactionsParseParseService $transactionsParseService;
+    private TransactionsParseService $transactionsParseService;
 
     protected function setUp(): void
     {
-        $this->transactionsParseService = new TransactionsParseParseService();
+        $this->transactionsParseService = new TransactionsParseService();
     }
 
     /**

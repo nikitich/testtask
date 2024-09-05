@@ -9,7 +9,7 @@ use App\providers\interfaces\CountriesProviderInterface;
 use App\providers\interfaces\ExchangeRateProviderInterface;
 use App\providers\interfaces\InputFileProviderInterface;
 use App\services\CommissionCalculatorService;
-use App\services\TransactionsParseParseService;
+use App\services\TransactionsParseService;
 use App\services\interfaces\CommissionCalculatorServiceInterface;
 use App\services\interfaces\TransactionsParseServiceInterface;
 
@@ -19,5 +19,5 @@ return [
     CountriesProviderInterface::class => DI\autowire(CountriesProvider::class),
     InputFileProviderInterface::class => DI\autowire(InputFileProvider::class),
     CommissionCalculatorServiceInterface::class => DI\autowire(CommissionCalculatorService::class),
-    TransactionsParseServiceInterface::class => DI\autowire(TransactionsParseParseService::class),
+    TransactionsParseServiceInterface::class => DI\autowire(TransactionsParseService::class),
 ];

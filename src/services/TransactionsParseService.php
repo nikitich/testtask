@@ -7,7 +7,7 @@ use App\services\interfaces\TransactionsParseServiceInterface;
 use JsonException;
 use RuntimeException;
 
-readonly class TransactionsParseParseService implements TransactionsParseServiceInterface
+readonly class TransactionsParseService implements TransactionsParseServiceInterface
 {
     /**
      * @throws JsonException
